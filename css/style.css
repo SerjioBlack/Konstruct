@@ -289,13 +289,13 @@ letter-spacing: 0.188px;
 }
 
 .container2 {
-	max-width: 1470px;
+	max-width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
 }
 
 .pbottom {
-background: url(../image/bgbottom.webp) center;
+background: url(../image/bgbottom.webp) center/cover;
 max-width: 100%;
 height: 500px;
 }
