@@ -1,0 +1,541 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: top;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body {
+	scroll-behavior: smooth;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('../fonts/OpenSansCondensed-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;}
+
+
+	@font-face {
+		font-family: 'Open Sans';
+		src: url('../fonts/OpenSans-Regular.woff2') format('woff2');
+		font-weight: 400;
+		font-style: normal;
+		font-display: swap;}
+/* _____________________________________ */
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #48555B;
+}
+
+.scroll {
+	position: relative;
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.background {
+	background: url(../image/bg.webp) no-repeat center/cover ;
+	max-width: 100%;
+    height: 100vh;
+	color: white;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	align-items: center;
+	scroll-snap-align: end;
+}
+
+.container {
+	max-width: 970px;
+	margin: 0 auto;
+	padding: 0 15px;
+	
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 60px;
+font-weight: 400;
+letter-spacing: 5.709px;
+}
+
+.bg-middle p {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.bg-bottom {
+	text-align: center;
+font-size: 11px;
+font-weight: 600;
+letter-spacing: 3.7px;
+padding-bottom: 70px;
+}
+
+.logo {
+	padding-top: 40px;
+}
+
+.header-items li:nth-child(2) {
+	color: #00A4E5;;
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+height: 65px;
+padding: 25px 0;
+color: #48555B;
+text-align: center;
+font-size: 12px;
+font-weight: 600;
+letter-spacing: 1.091px;
+margin-bottom: 80px;
+}
+
+.header-items {
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+}
+
+.header:hover {
+border-top: 2px solid #00A4E5;
+border-bottom: 2px solid #00A4E5;
+}
+
+.story {
+	text-align: center;
+	font-size: 18px;
+font-weight: 700;
+letter-spacing: 2.306px;
+margin-bottom: 80px;
+position: relative;
+}
+
+.story::before  {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -10px;
+	width: 50px;
+height: 2px;
+background: #00A4E5;
+}
+
+.section1 {
+	display: flex;
+	gap: 90px;
+	justify-content: space-between;
+	margin-bottom: 120px;
+}
+
+.section1-left h3 {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 30px;
+	letter-spacing: 0.188px;
+	line-height: 23px;
+}
+
+.section1-left h3 span {
+	color: #16ACE8;
+}
+
+.section1-left p {
+	font-size: 13px;
+line-height: 23px;
+letter-spacing: 0.188px;
+}
+
+.section1-right {
+	display: flex;
+gap: 20px;
+}
+
+.section2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 80px;
+}
+
+.section2 h2 {
+	font-size: 18px;
+font-weight: 700;
+letter-spacing: 2.306px;
+position: relative;
+}
+
+.section2 h2::before  {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	width: 50px;
+height: 2px;
+background: #00A4E5;
+}
+
+.section2 p {
+	max-width: 400px;
+	font-size: 11px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0.2px;
+}
+
+.section2 a, .pbottom a {
+	display: block;
+	width: 150px;
+height: 40px;
+background: #00A4E5;
+text-decoration: none;
+color: #FFF;
+font-size: 13px;
+font-weight: 700;
+letter-spacing: 0.5px;
+text-align: center;
+padding-top: 14px;
+margin-left: 30px;
+}
+
+.section2 a:active, .section2 a:hover
+.pbottom a:active, .pbottom a:hover {
+box-shadow: 7px -7px 22px 1px rgba(0,164,229,0.83);
+}
+
+.section3 {
+display: flex;
+justify-content: space-between;
+gap: 70px;
+margin-bottom: 170px;
+}
+
+.section3 div {
+	flex: 1 1 30%;
+}
+
+.section3 h3 {
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0.427px;
+margin: 25px 0 15px 0;
+}
+
+.section3 p{
+font-size: 13px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0.188px;
+}
+
+.container2 {
+	max-width: 1470px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.pbottom {
+background: url(../image/bgbottom.webp) center;
+max-width: 100%;
+height: 500px;
+}
+
+.pbottom p {
+	max-width: 350px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+	letter-spacing: 0.15px;
+	margin-bottom: 35px;
+	padding: 100px 15px 0 15px;
+}
+
+.pbottom a {
+margin: 0 auto;
+margin-bottom: 240px;
+}
+
+.signup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+height: 100px;
+max-width: 100%;
+background: #171819;
+color: #FFF;
+font-size: 22px;
+font-weight: 700;
+letter-spacing: 0.846px;
+padding: 0 15px;
+}
+
+.signup p {
+	margin-right: 70px;
+}
+
+#mail {
+	max-width: 250px;
+height: 40px;
+border: 1px solid #979797;
+background: #FFF;
+padding-left: 10px;
+}
+
+#mail::placeholder {
+	font-size: 14px;
+font-weight: 400;
+letter-spacing: 0.07px;
+
+}
+
+#signup {
+	width: 150px;
+height: 40px;
+background: #00A4E5;
+border: none;
+cursor: pointer;
+}
+
+.footer {
+	max-height: 100%;
+	background: #141A20;
+	color: #FFF;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 10px;
+	font-size: 11px;
+	padding: 45px 250px;
+}
+
+.footer li {
+	padding: 10px 0;
+}
+
+.footer1 {
+max-width: 250px;
+}
+
+.footer-logo {
+	padding: 15px 0;
+}
+
+.footer3, .footer4 {
+padding-top: 30px;
+
+}
+
+.footer5 {
+	max-width: 141px;
+}
+
+.under-footer {
+	max-height: 60px;
+	background: #171819;
+	color: #FFF;
+	font-size: 11px;
+	font-weight: 400;
+	letter-spacing: 0.846px;
+	text-align: center;
+	padding: 22px 0;
+}
+
+
+
+@media (max-width:992px) {
+
+.background {
+	flex-wrap: wrap;
+}
+.bg-middle {
+	text-align: center;
+}
+
+.header-items, .header {
+	
+	justify-content: center;
+	align-items: center;
+}
+
+.header-items {
+	margin-left: 20px;
+}
+
+.section1 {
+	display: block;
+	text-align: center;
+}
+
+.section1-right {
+	justify-content: center;
+	margin-top: 20px;
+}
+}
+
+@media (max-width:790px) {
+
+
+	.footer {
+		flex-flow: wrap;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 10px 10px;
+	}
+
+	.section2 h2 {
+		padding-right: 10px;
+	}
+
+	.section2 a {
+		min-width: 150px;
+min-height: 40px;
+
+	}
+
+	
+}
+
+@media (max-width:600px) {
+
+	.header-items {
+		gap: 20px;
+	}
+
+	.logo svg {
+		min-width: 100px;
+		min-height: 20px;
+	}
+
+.signup {
+flex-wrap: wrap;
+text-align: center;
+}
+
+.signup p {
+margin-right: 30px;
+	}
+
+
+.section3 {
+	gap: 20px;
+}
+
+}
+
+@media (max-width:500px) {
+
+	.body {
+		line-height: normal;
+		letter-spacing: normal;
+	}
+.section2 {
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	text-align: center;
+}
+
+.section3 {
+flex-direction: column;
+text-align: center;
+}
+	
+.footer {
+	flex-direction: column;
+}
+
+.footer-logo {
+	padding: 0;
+}
+
+.footer3, .footer4 {
+padding-top: 0;
+}
+
+.header-items {
+		gap: 10px;
+		font-size: 10px;
+	}
+
+	.section1-right  {
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width:400px) {
+	.signup p {
+		margin-right: 0;
+		margin: 20px 0;
+	}
+
+	.footer {
+		padding-top: 40px;
+	}
+
+	.bg-middle h1 {
+font-size: 50px;
+	}
+}
